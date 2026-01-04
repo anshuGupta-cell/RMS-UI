@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="./menu/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header onclick=""><button onclick="toggleSidebar()">toggle</button>RMS</header>
+    <aside class="aside">
+        <ul class="nav-list">
+            <li class="active">
+                <a onclick="loadPage('/menu/index.html')" aria-current="page"><span>Home</span></a>
+            </li>
+            <li>
+                <a onclick="loadPage('./kitchen/page.html')"><span>Kitchen</span></a>
+            </li>
+            <li>
+                <a onclick="loadPage('blog.html')"><span>Blog</span></a>
+            </li>
+            <li>
+                <a href="index.html"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="index.html"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="index.html"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="index.html"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="index.html"><span>Home</span></a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main"></main>
+    <footer>footer</footer>
+
+
+    <script>
+        const main = document.querySelector(".main")
+        const loadPage = async (page) => {
+            let res = await fetch(page)
+            res = await res.text()
+            main.innerHTML = res
+        }
+        loadPage("menu/index.html")
+
+        
+        function toggleSidebar() {
+            document.querySelector(".aside").classList.toggle("show")
+        }
+    </script>
+</body>
+
+</html>

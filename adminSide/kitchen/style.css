@@ -1,0 +1,55 @@
+html {
+    color-scheme: light;
+}
+
+body {}
+
+.wrapper {
+    width: min(900px, 100% - 3rem);
+    margin-inline: auto;
+}
+.table-heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #c2c2c2;
+    padding: 1rem;
+}
+caption,
+th, 
+td{
+    padding: .75rem;
+}
+
+caption,
+th{
+    text-align: left;
+}
+caption{
+    font-weight: 500;
+}
+th{
+    background: hsl(from #fed h s l / );
+}
+tr:nth-of-type(2n){
+     background: hsl(from #fed h s l / .8);
+}
+
+@media (max-width: 720px) {
+    th{
+        display: none;
+    }
+    td{
+        display: grid;
+        grid-template-columns: 15ch auto;
+        padding: .5rem 1rem;
+    }
+    
+    td::before{
+        content: attr(data-cell)": ";
+        font-weight: 700;
+    }
+}

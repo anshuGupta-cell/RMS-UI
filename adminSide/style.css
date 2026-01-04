@@ -1,4 +1,4 @@
-
+@import url("./kitchen/style.css");
 
 :root {
     --body-bg-dark: #123;
@@ -125,4 +125,11 @@ footer {
     .show {
         display: block;
     }
+}
+
+.search-bar{
+    background: #f1f1f1;
+    padding: 0.5rem 1rem;
+    border-radius: .25rem;
+    border: 1px solid black;
 }

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css">
-    <link rel="stylesheet" href="./kitchen/style.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,10 +20,10 @@
                 <a onclick="loadPage('./kitchen/page.html')"><span>Kitchen</span></a>
             </li>
             <li>
-                <a onclick="loadPage('blog.html')"><span>Blog</span></a>
+                <a onclick="loadPage('./bills/allBills/index.html')"><span>Bills</span></a>
             </li>
             <li>
-                <a href="index.html"><span>Home</span></a>
+                <a onclick="loadPage('./bills/payBill/index.html')"><span>Pay Bill</span></a>
             </li>
             <li>
                 <a href="index.html"><span>Home</span></a>
@@ -51,7 +50,7 @@
             res = await res.text()
             main.innerHTML = res
         }
-        loadPage("kitchen/page.html")
+        loadPage("bills/payBill/index.html")
 
         
         function toggleSidebar() {

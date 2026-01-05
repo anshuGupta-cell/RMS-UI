@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="../src/output.css">
+  <link rel="stylesheet" href="src/util.css">
+  <!-- font vietnam pro -->
+  <title>vite-project</title>
+</head>
+
+<body>
+
+  <header class="primary-header | flex justify-between p-2 ">
+    <div class="flex items-center gap-2">
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="visullay-hidden">Menu</span>
+        <img class="icon-hamburger | icon" src="/public/svg/bars-solid.svg" alt="" aria-hidden="true">
+      </button>
+      <a href="#">
+        <h1>Petpooja</h1>
+      </a>
+      <ul>
+        <button class="button">New Order</button>
+        <button class="button" data-type="inverted">Bill No</button>
+      </ul>
+    </div>
+    <div class="flex items-center">
+      <ul class="icon">
+        <img class="" src="/public/svg/power-off-solid-full.svg" alt="">
+      </ul>
+    </div>
+  </header>
+
+  <aside class="text-accent-100 primary-navigation" id="primary-navigation">
+
+    <ul class="flex justify-between items-center">
+      <h3 class="fs-500 fw-bold">Settings</h3>
+      <button class="nav-toggle bg-accent-500" aria-controls="primary-navigation" aria-expanded="false">
+        <img class="icon-close | icon " data-type="inverted" src="/public/svg/xmark-regular.svg" alt="">
+
+      </button>
+    </ul>
+    <nav>
+      <ul aria-label="Primary" role="list" class="nav-list">
+        <li class="nav-items  ">
+          <img class="icon" data-type="inverted" aria-hidden="true" src="/public/svg/invoice-03-stroke-rounded.svg" alt="">
+          <a href="#">Billing</a>
+        </li>
+        <li class="nav-items  ">
+          <img class="icon" data-type="inverted" aria-hidden="true" src="/public/svg/menu-02-stroke-rounded.svg" alt="">
+          <a href="#">Operations</a>
+        </li>
+        <li class="nav-items  ">
+          <img class="icon" data-type="inverted" aria-hidden="true" src="/public/svg/school-report-card-stroke-rounded.svg" alt="">
+          <a href="#">Reports</a>
+        </li>
+        <li class="nav-items  ">
+          <img class="icon" data-type="inverted" aria-hidden="true" src="/public/svg/menu-square-stroke-rounded.svg" alt="">
+          <a href="#">Live View</a>
+        </li>
+        <li class="nav-items  ">
+          <img class="icon" data-type="inverted" aria-hidden="true" src="/public/svg/analytics-up-stroke-rounded.svg" alt="">
+          <a href="#">Day End</a>
+        </li>
+        <li class="nav-items  ">
+          <img class="icon" data-type="inverted" aria-hidden="true" src="/public/svg/settings-05-stroke-rounded.svg" alt="">
+          <a href="#">Settings</a>
+        </li>
+        <li class="nav-items  ">
+          <img class="icon" data-type="inverted" aria-hidden="true" src="/public/svg/refresh-03-stroke-rounded.svg" alt="">
+          <a href="#">Check Updates</a>
+        </li>
+        <li class="nav-items  ">
+          <img class="icon" data-type="inverted" aria-hidden="true" src="/public/svg/power-off-solid-full.svg" alt="">
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

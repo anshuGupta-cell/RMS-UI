@@ -27,4 +27,4 @@ const loadPage = async (page) => {
     app.innerHTML = data
 }
 
-loadPage("./src/order/order.htm")
+loadPage("./src/home/home.htm")

@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Tables</title>
+  <meta charset="UTF-8">
+  <title>Table View</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section >
 
-    </section>
+<header class="flex justify-between items-center p-2 bg-neutral-100">
+  <h2 class="fs-primary-heading fw-bold text-primary-400">
+    Table View
+  </h2>
+
+  <div class="flex gap-2">
+    <button class="button">Delivery</button>
+    <button class="button">Pick Up</button>
+    <button class="button">+ Add Table</button>
+  </div>
+</header>
+
+<section class="flex justify-between items-center p-2 gap-2">
+  <div class="flex gap-2">
+    <button class="button">+ Table Reservation</button>
+    <button class="button">+ Contactless</button>
+  </div>
+
+  <button class="button" data-type="inverted">
+    Move KOT / Items
+  </button>
+
+  <div class="flex gap-2 fs-300">
+    <span><span class="status-dot blank"></span> Blank</span>
+    <span><span class="status-dot running"></span> Running</span>
+    <span><span class="status-dot printed"></span> Printed</span>
+    <span><span class="status-dot paid"></span> Paid</span>
+    <span><span class="status-dot kot"></span> KOT</span>
+  </div>
+</section>
+
+<main class="container">
+
+  <h3 class="section-title">Ground Floor</h3>
+  <div class="table-grid">
+    <div class="table-box">1</div>
+    <div class="table-box">2</div>
+    <div class="table-box">3</div>
+    <div class="table-box">4</div>
+    <div class="table-box">5</div>
+    <div class="table-box">6</div>
+    <div class="table-box">7</div>
+    <div class="table-box">8</div>
+    <div class="table-box">9</div>
+    <div class="table-box">10</div>
+  </div>
+
+
+
+  <h3 class="section-title">Basement</h3>
+  <div class="table-grid">
+    <div class="table-box">11</div>
+    <div class="table-box">12</div>
+    <div class="table-box">13</div>
+    <div class="table-box">14</div>
+    <div class="table-box">15</div>
+    <div class="table-box">16</div>
+    <div class="table-box">17</div>
+    <div class="table-box">18</div>
+    <div class="table-box">19</div>
+    <div class="table-box">20</div>
+  </div>
+
+  <h3 class="section-title">Party Hall</h3>
+  <div class="table-grid">
+    <div class="table-box hall">Hall 1</div>
+    <div class="table-box hall">Hall 2</div>
+  </div>
+
+</main>
+
 </body>
 </html>

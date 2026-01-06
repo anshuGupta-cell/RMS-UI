@@ -304,7 +304,8 @@ body {
   font-family: var(--ff-body);
   color: var(--clr-primary-400);
 }
-main{
+
+main {
   height: calc(100vh - 57.43px);
 }
 
@@ -427,6 +428,12 @@ main{
   height: 100%;
 }
 
+@media (min-width: 100em) {
+  .order-container {
+    background: #000;
+  }
+}
+
 /* item category */
 .category-wrapper {
   grid-area: category;
@@ -448,36 +455,94 @@ main{
   background: var(--clr-primary-200);
   border-radius: .25rem;
 }
-.category-select:focus-visible{
-  
-}
 
-.category-list{
-  
-}
+.category-select:focus-visible {}
 
-.category-items{
+.category-list {}
+
+.category-items {
   display: flex;
   gap: .5rem;
   align-items: center;
   cursor: pointer;
   line-height: 1;
   padding: 1rem;
+  ;
 }
-.category-items button{
+
+.category-items button {
   border: 0;
   background: none;
+  text-align: left
 }
-.category-items[data-type="active"]{
+
+.category-items[data-type="active"] {
   background: var(--clr-primary-400);
 }
 
 
 /* Menu Items */
-.item-wrapper {
+.item-container {
   grid-area: item;
+  display: grid;
+  place-content: start;
+  gap: .5rem;
+  height: 100%;
+
 }
 
+.search-wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: .25rem;
+  background: var(--clr-neutral-700);
+  gap: .5rem;
+}
+
+.search-bar {
+  display: flex;
+  background: var(--clr-neutral-100);
+  padding: .4rem;
+  border-radius: .5rem;
+  gap: .25rem;
+}
+
+.search-bar:focus-within {
+  outline: 2px solid var(--clr-accent-300);
+  outline-offset: 1px;
+}
+
+.search-bar input {
+  color: var(--clr-primary-400);
+  background: none;
+  border: 0;
+  outline: 0;
+}
+
+.item-wrapper {
+  display: grid;
+  padding: .5rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: .5rem;
+}
+.item-card{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: .5rem;
+  min-height: 60px;
+  border-radius: .25rem;
+  background: var(--clr-neutral-100);
+  font-size: var(--fs-300);
+}
+.item-card div{
+  width: .3em;
+  height: 100%;
+  background: green;
+}
+
+
+/* order Bill  */
 .bill-wrapper {
   grid-area: bill;
 }

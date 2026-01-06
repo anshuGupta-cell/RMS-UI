@@ -22,9 +22,12 @@ const app = document.querySelector(".app")
 const loadPage = async (page) => {
     const res = await fetch(page) 
     const data = await res.text()
-    console.log(res.body);
+    console.log(res);
     
     app.innerHTML = data
+    console.log(data);
+    
 }
 
-loadPage("./src/home/home.htm")
+loadPage("home/home.htm")
+loadPage("order/order.htm")

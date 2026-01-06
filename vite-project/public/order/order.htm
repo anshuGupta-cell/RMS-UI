@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="order-container ">
+    <!-- category and type wise select  -->
+    <aside class="category-wrapper">
+      <ul class="">
+        <select class="category-select cursor-pointer" name="" id="">
+          <option value="Fast Food" selected>Fast Food</option>
+          <option value="Starter">Starter</option>
+        </select>
+      </ul>
+      <ul class="category-list" role="list">
+        <li class="category-items" data-type="active"><button>Favorite Items</button></li>
+        <li class="category-items"><button>Beverages</button></li>
+        <li class="category-items"><button>Burgers</button></li>
+        <li class="category-items"><button>EGG</button></li>
+        <li class="category-items"><button>Chiken</button></li>
+        <li class="category-items"><button>Chakhna</button></li>
+        <li class="category-items"><button>Chinese Snacks</button></li>
+        <li class="category-items"><button>Chinese Soups</button></li>
+        <li class="category-items"><button>Garlic Bread</button></li>
+        <li class="category-items"><button>Gravy Items</button></li>
+        <li class="category-items"><button>Hawallon Wraps</button></li>
+        <li class="category-items"><button>Maggie Lover</button></li>
+        <li class="category-items"><button>Maggie Lover</button></li>
+        <li class="category-items"><button>Maggie Lover</button></li>
+        <li class="category-items"><button>Maggie Lover</button></li>
+        <li class="category-items"><button>Maggie Lover</button></li>
+
+
+      </ul>
+    </aside>
+
+    <!-- menu item select section  -->
+    <div class="item-container">
+      <ul class="search-wrapper ">
+        <li class="search-bar">
+          <img class="icon-sm" src="/svg/magnifying-glass-solid.svg" alt="">
+          <input type="text" name="seacrh-item" id="" placeholder="Search item">
+        </li>
+        <li class="search-bar">
+          <input type="text" name="search-code" id="" placeholder="Short Code">
+        </li>
+      </ul>
+      <ul class="item-wrapper">
+        <li class="item-card" data-type="veg">
+          <div></div>
+          <p>Aloo Tikki</p>
+        </li>
+        <li class="item-card" data-type="veg">
+          <div></div>
+          <p>Aloo Tikki</p>
+        </li>
+        <li class="item-card" data-type="egg">
+          <div></div>
+          <p>Aloo Tikki</p>
+        </li>
+        <li class="item-card" data-type="non-veg">
+          <div></div>
+          <p>Aloo Tikki</p>
+        </li>
+
+        <li class="item-card" data-type="veg">
+          <div></div>
+          <p>Aloo Tikki</p>
+        </li>
+        <li class="item-card" data-type="egg">
+          <div></div>
+          <p>Aloo Tikki</p>
+        </li>
+        <li class="item-card" data-type="non-veg">
+          <div></div>
+          <p>Aloo Tikki</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Bill section  -->
+    <div class="bill-wrapper">
+      <nav class="bill-navigation">
+        <ul class="b-nav-primary">
+          <li data-type="active"><a href="#">Dine in</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Pick Up</a></li>
+        </ul>
+        <div class="b-nav-secondary">
+          <ul>
+            <li><img class="icon" src="/public/svg/magnifying-glass-solid.svg" alt=""></li>
+            <li><img class="icon" src="/public/svg/magnifying-glass-solid.svg" alt=""></li>
+            <li><img class="icon" src="/public/svg/magnifying-glass-solid.svg" alt=""></li>
+            <li><img class="icon" src="/public/svg/magnifying-glass-solid.svg" alt=""></li>
+            <li><img class="icon" src="/public/svg/magnifying-glass-solid.svg" alt=""></li>
+
+          </ul>
+          <ul>
+            <li class="bg-accent-400">Ground Floor</li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="bill-main-container">
+        <table class="order-list ">
+          <!-- <caption></caption> -->
+          <tr class="order-list-heading">
+            <th>ITEMS</th>
+            <th>CHECK ITEMS</th>
+            <th>QTY</th>
+            <th>PRICE</th>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+          <tr class="order-list-row">
+            <td class="td-item-name" data-cell="ITEMS">
+              <button>
+                <img class="icon-sm" src="/svg/xmark-regular.svg" alt="">
+              </button>
+              Egg Curry
+            </td>
+            <td></td>
+            <td data-cell="QTY">
+                <button>-</button>
+                <input type="text" min="1" value="32" name="" id="">
+                <button>+</button>
+            </td>
+            <td data-cell="PRICE">200.00</td>
+          </tr>
+        </table>
+      </main>
+      <footer class="bill-footer">
+        <div class="bg-neutral-700 text-accent-100">
+          <ul class="">
+            <li><button class="button">Bogo Offer</button></li>
+            <li><button class="button">Split</button></li>
+            <li>
+              <label class="flex gap-1" for="complementory">
+                <input type="checkbox" name="" id="complementory">Complementory
+              </label>
+            </li>
+          </ul>
+          <ul>total: <span>2023</span></ul>
+        </div>
+        <div class="bg-neutral-600 text-accent-100">
+          <label class="flex gap-2" for="cash">
+            <input type="radio" name="mode" id="cash">Cash
+          </label>
+          <label class="flex gap-2" for="card">
+            <input type="radio" name="mode" id="card">Card
+          </label>
+          <label class="flex gap-2" for="due">
+            <input type="radio" name="mode" id="due">Due
+          </label>
+          <label class="flex gap-2" for="Other">
+            <input type="radio" name="mode" id="Other">Other
+          </label>
+          <label class="flex gap-2" for="port">
+            <input type="radio" name="mode" id="port">Port
+          </label>
+        </div>
+        <div class="bg-neutral-700 text-accent-100">
+          <label class="flex gap-2" for="paid">
+            <input type="checkbox" name="" id="paid">It's Paid
+          </label>
+          <label class="flex gap-2" for="loyalty">
+            <input type="checkbox" name="" id="loyalty">Loyalty
+          </label>
+          <label class="flex gap-2" for="feedback-sms">
+            <input type="checkbox" name="" id="feedback-sms">Send Feedback SMS
+          </label>
+        </div>
+
+        <div class="gap-2">
+          <button class="button">Save</button>
+          <button class="button">Save & Print</button>
+          <button class="button">Save & obill</button>
+          <button class="button" data-type="primary-200">KOT</button>
+          <button class="button" data-type="primary-200">KOT & Print</button>
+          <button class="button" data-type="inverted">Hold</button>
+        </div>
+      </footer>
+    </div>
+  </section>
+</body>
+
+</html>

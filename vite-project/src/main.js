@@ -11,3 +11,20 @@ Array.from(navToggle).forEach(btn => btn.addEventListener('click', () => {
     }
 primaryNav.toggleAttribute("data-visible")
 }))
+
+
+const categoryItems = document.querySelectorAll('.category-item')
+
+
+
+const app = document.querySelector(".app")
+
+const loadPage = async (page) => {
+    const res = await fetch(page) 
+    const data = await res.text()
+    console.log(res.body);
+    
+    app.innerHTML = data
+}
+
+loadPage("./src/order/order.htm")

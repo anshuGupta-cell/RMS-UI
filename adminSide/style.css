@@ -2,10 +2,10 @@
 
 :root {
     --body-bg-dark: #123;
-    --body-bg: #fed;
+    --body-bg: rgb(255, 255, 255);
     --color: #123;
     --color-dark: #fed;
-    --nav-bg: rgb(220, 220, 220);
+    --nav-bg: rgb(74, 74, 74);
     --nav-bg-dark: rgb(69, 92, 115);
     --header-bg-dark: rgb(32, 45, 59);
     --header-bg: rgb(124, 164, 208);
